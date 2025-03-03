@@ -28,5 +28,12 @@ namespace Bai16_FormatText
             formatText.MdiParent = this;
             formatText.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string ten = " Lương Hoàng Phúc";
+            lblInfo.Text = " Họ Và Tên Thí Sinh: " + ten + Environment.NewLine;
+            lblInfo.Text += " Ngày Viết Chương Trình: " + System.DateTime.Now;
+        }
     }
 }
